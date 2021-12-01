@@ -12,6 +12,7 @@ fn test_sliding_window_increase() {
     assert_eq!(5, sliding_window_increase(&test_data));
 }
 
+#[inline]
 pub fn count_increase(data: &Vec<usize>) -> usize {
     let mut iter = data.into_iter();
     let mut v = iter.next().unwrap_or(&0);
@@ -27,6 +28,7 @@ pub fn count_increase(data: &Vec<usize>) -> usize {
     counter
 }
 
+#[inline]
 pub fn sliding_window_increase(data: &Vec<usize>) -> usize {
     let mut iter = data.windows(3).into_iter();
     let mut v: usize = iter.next().unwrap_or(&[0, 0, 0]).into_iter().sum();
