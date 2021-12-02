@@ -1,17 +1,8 @@
 [package]
-name = "y-2021"
+name = "d-2"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clap = "2.34.0"
-d-1-0 = { path = "./d-1-0" }
-d-2 = { path = "./d-2" }
-
-[workspace]
-members = [
-   "d-1-0",
-   "d-2"
-]

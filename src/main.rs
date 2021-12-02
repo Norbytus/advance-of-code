@@ -40,6 +40,12 @@ fn main() {
         "1-1" => {
             println!("Result: {}", d_1_0::sliding_window_increase(&parse_as_usize_vec(&data_set).expect("Error while parsing data set")));
         },
+        "2-0" => {
+            println!("Result: {}", d_2::calculate(&data_set));
+        },
+        "2-1" => {
+            println!("Result: {}", d_2::calculate_v1(&data_set));
+        },
         _ => panic!("Undefined quest day"),
     }
 }
